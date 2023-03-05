@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.BasketActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Basket"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/basketList"
+        android:layout_width="403dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/card_item" />
+
+    <TextView
+        android:id="@+id/seekbarBg2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/basketList"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="15dp"
+        android:alpha="1"
+        android:gravity="center"
+        android:paddingStart="9dp"
+        android:paddingEnd="9dp"
+        android:text="Sifarişi tamamlamaq üçün sürüşdür"
+        android:textColor="#3c0031"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/basketList"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/seekbarBg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/basketList"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="15dp"
+        android:alpha="0"
+        android:background="@drawable/seekbar_bg_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/basketList"
+        tools:ignore="MissingConstraints" />
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/basketList"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/seekbar_bg_1"
+        android:clickable="false"
+        android:max="100"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:progressDrawable="@android:color/transparent"
+        android:thumb="@drawable/swipe_arrows"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/basketList" />
+</androidx.constraintlayout.widget.ConstraintLayout>

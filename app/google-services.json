@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "570591259711",
+    "firebase_url": "https://petsgoproducts-default-rtdb.firebaseio.com",
+    "project_id": "petsgoproducts",
+    "storage_bucket": "petsgoproducts.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570591259711:android:4bac6f96191422a9279c8a",
+        "android_client_info": {
+          "package_name": "com.example.petsgoforsaleequipment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "570591259711-u5951t2lvm4rdg7i9os2mdm6g9tinn7k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.petsgoforsaleequipment",
+            "certificate_hash": "4913eb4f6ec2d6d90d35b1634944383cf67279b1"
+          }
+        },
+        {
+          "client_id": "570591259711-s5omvitcbjr5dn8ca4iei4pcpsqv5jd1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjQCxgAaRVwhFzXa3p8xR_hkTpdZt5Xbw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "570591259711-s5omvitcbjr5dn8ca4iei4pcpsqv5jd1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
